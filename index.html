@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme-light">
+
+    <!-- start container -->
+    <div class="col-xl-7 col-lg-9 col-md-10 mx-auto">
+
+        <div class="header bg-danger py-2 m-1">
+            <div class="hamber">
+                <div class="icon">
+                    <span class="hamburger-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- start sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="logo fs-4">
+                    Arya Tech
+                </div>
+                <div class="sidebar-avatar">
+                    <div class="avatar-image">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="avatar-info">
+                        <div class="avatar-text">
+                            <h4>omid shayan</h4>
+                            <small>Example@gmail.com</small>
+                        </div>
+                        <span class="fas fa-chevron-down"></span>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="" class="active">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span class="active">dashboard</span>
+                            </a></li>
+                        <li>
+                            <a href="">
+                                <span class="fas fa-chart-bar"></span>
+                                <span>icons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fas fa-chart-bar"></span>
+                                <span>contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fas fa-tablet-alt"></span>
+                                <span>settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="fas fa-user-circle"></span>
+                                <span>exit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end sidebar -->
+
+        <!-- content -->
+        <div class="main-content">
+
+            content
+        </div>
+        <!-- end content -->
+
+
+
+
+    </div>
+    <!-- end container -->
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const hamber = document.querySelector('.hamburger-icon');
+
+
+        hamber.addEventListener('click', function () {
+            sidebar.classList.toggle('active')
+        })
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontA.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
